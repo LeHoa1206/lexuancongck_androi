@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F8F8F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+
+                android:contentDescription="Avatar" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+
+                android:contentDescription="Menu" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, Alex!"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingBottom="4dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You've got 5 tasks today 📅"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:paddingBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#EFEFEF"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+            android:radius="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+
+                android:contentDescription="Search icon"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Search something.."
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:background="@android:color/transparent"
+                android:textColorHint="#888888"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:radius="8dp">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="16dp"
+                    android:background="#CCCCCC"
+                    android:layout_marginBottom="8dp" />
+
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="16dp"
+                    android:background="#CCCCCC" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+
+                android:contentDescription="Play button" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My tasks"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recently"
+                android:textColor="#888888"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:textColor="#000"
+                android:fontFamily="sans-serif-medium"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upcoming"
+                android:textColor="#888888"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Later"
+                android:textColor="#888888"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Danh sách nhiệm vụ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:radius="8dp">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="16dp"
+                    android:background="#CCCCCC"
+                    android:layout_marginBottom="8dp" />
+
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="16dp"
+                    android:background="#CCCCCC"
+                    android:layout_marginBottom="8dp" />
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progress="40"
+                    android:progressTint="#4CAF50" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:radius="8dp">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="16dp"
+                    android:background="#CCCCCC"
+                    android:layout_marginBottom="8dp" />
+
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="16dp"
+                    android:background="#CCCCCC"
+                    android:layout_marginBottom="8dp" />
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progress="22"
+                    android:progressTint="#4CAF50" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
